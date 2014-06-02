@@ -7,6 +7,6 @@ derby.on('store', function(store) {
 
 module.exports = function(app, options) {
     if (app.loadStatic) {
-        app.loadStatic(__dirname + '/bower_components/leaflet/dist/');
+        app.loadStatic({ route: '/images', dir: __dirname + '/bower_components/leaflet/dist/images' });
     }
 };
